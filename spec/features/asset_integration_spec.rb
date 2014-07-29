@@ -15,4 +15,9 @@ describe 'static assets integration' do
     visit '/assets/outdatedbrowser/outdatedBrowser.css'
     expect(page.text).to match(/Outdated Browser/)
   end
+
+  it 'provides a partial with the div on the asset pipeline' do
+    visit '/'
+    expect(page).to have_selector('#outdated')
+  end
 end
