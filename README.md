@@ -4,6 +4,8 @@ This project bundles the excellent Burocratik's
 [Outdated Browser](https://github.com/burocratik/outdated-browser)
 detector for use with the rails 3.1+ asset pipeline.
 
+[![Gem Version](https://badge.fury.io/rb/outdatedbrowser_rails.svg)](http://badge.fury.io/rb/outdatedbrowser_rails)
+
 ## Installation
 
 Add this line to your application's Gemfile:
