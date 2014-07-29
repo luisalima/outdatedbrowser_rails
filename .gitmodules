@@ -1,0 +1,3 @@
+[submodule "vendor/outdated-browser"]
+	path = vendor/outdated-browser
+	url = https://github.com/burocratik/outdated-browser
