@@ -14,11 +14,12 @@ Gem::Specification.new do |s|
   s.description = "A gem to automate using outdated-browser with Rails >= 3."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.licenses    = ['MIT']
 
-  s.add_dependency "rails", "~> 3.2.19"
-  s.add_dependency "i18n"
+  s.add_dependency "rails", '~> 3.2', '>= 3.2.16'
+  s.add_dependency "i18n", '~> 0.6'
 
-  s.add_development_dependency "capybara"
-  s.add_development_dependency "rspec-rails"
+  s.add_development_dependency "capybara", '~> 2.4'
+  s.add_development_dependency "rspec-rails", '~> 3.0'
   s.test_files = Dir["spec/**/*"]
 end
