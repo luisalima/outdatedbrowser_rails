@@ -7,16 +7,16 @@ require "outdatedbrowser_rails/version"
 Gem::Specification.new do |s|
   s.name        = "outdatedbrowser_rails"
   s.version     = OutdatedbrowserRails::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of OutdatedbrowserRails."
-  s.description = "TODO: Description of OutdatedbrowserRails."
+  s.authors     = ["Luisa Lima"]
+  s.email       = ["luisamoyalima@gmail.com"]
+  s.homepage    = "https://github.com/luisalima/outdatedbrowser_rails"
+  s.summary     = "Adds outdatedbrowser assets to the rails asset pipeline."
+  s.description = "A gem to automate using outdated-browser with Rails >= 3."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
   s.add_dependency "rails", "~> 3.2.19"
-  # s.add_dependency "jquery-rails"
+  s.add_dependency "i18n"
 
   s.add_development_dependency "rspec-rails"
   s.add_development_dependency "capybara"
