@@ -51,13 +51,13 @@ and overriding them.
 
 See the [Outdated Browser usage guide](https://github.com/burocratik/outdated-browser#how-to-use-it).
 
-#### Testing the integration in your app
+### Testing the integration in your app
 
 * Of course, ideally use an outdated browser to test.
 * With an up-to-date browser:
  * In the view where you included the partial, check that `#outdated`
    is present.
- * See how it looks: `$('#outdated').show()
+ * See how it looks: `$('#outdated').show()`
 
 ## Contributing
 
