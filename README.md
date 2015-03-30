@@ -6,6 +6,13 @@ detector for use with the rails 3.1+ asset pipeline.
 
 [![Gem Version](https://badge.fury.io/rb/outdatedbrowser_rails.svg)](http://badge.fury.io/rb/outdatedbrowser_rails)
 
+## About
+
+The version numbers of this gem follow the versioning of
+[Outdated Browser](https://github.com/burocratik/outdated-browser),
+and the gem follows the `feature/languages` gem, which includes
+translations for several languages.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -16,7 +23,7 @@ gem 'outdatedbrowser_rails'
 
 ## Usage
 
-### Including Outdated Browser assets
+### 1. Include Outdated Browser assets
 
 Add this line to your `application.js`:
 
@@ -29,7 +36,7 @@ Add this line to your `application.css` || `application.scss`:
 ```css
 //= require outdatedbrowser/outdatedBrowser
 ```
-### Using the gem's strategy to require Outdated Browser
+### 2. Require Outdated Browser
 
 In the view where you want to use this, add:
 
@@ -43,15 +50,6 @@ _application.js_), add:
 ```erb
 <%= javascript_include_tag 'outdatedbrowser/require_outdatedbrowser' %>
 ```
-
-The gem uses `i18n` for the message strings, you can use other strings
-in your application by
-[looking at the keys](https://github.com/luisalima/outdatedbrowser_rails/blob/master/config/locales/en.yml)
-and overriding them.
-
-### Manual approach to require Outdated Browser
-
-See the [Outdated Browser usage guide](https://github.com/burocratik/outdated-browser#how-to-use-it).
 
 ### Testing the integration in your app
 
@@ -70,6 +68,8 @@ Here are a couple of things worth noting:
 * This is a mountable rails engine tested with `rspec` and `capybara`.
   For more info or a good reference to make your own, see
   [this good tutorial](http://viget.com/extend/rails-engine-testing-with-rspec-capybara-and-factorygirl).
+* The reference to `outdatedbrowser` is a git submodule. For a good
+  reference on how to update git submodules, see [this](https://chrisjean.com/git-submodules-adding-using-removing-and-updating/).
 * The rake task `rake generate:assets` copies the assets from the
   `vendor/outdated-browser` folder (which is a git submodule) to the
   engine `app` folder.
