@@ -11,7 +11,7 @@ detector for use with the rails 3.1+ asset pipeline.
 The version numbers of this gem follow the versioning of
 [Outdated Browser](https://github.com/burocratik/outdated-browser),
 and the gem follows the `feature/languages` gem, which includes
-translations for several languages.
+translations for several languages. The gem uses `I18n.locale` to select the correct locale, and falls back to `en` if the selected locale does not exist.
 
 ## Installation
 
