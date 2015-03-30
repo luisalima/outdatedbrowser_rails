@@ -45,6 +45,7 @@ task :clean do
       rm_rf "app/assets/#{filetype}/outdatedbrowser/#{filename}"
     end
   end
+  rm_rf 'app/views/outdatedbrowser/lang'
 end
 
 namespace :generate do
@@ -61,7 +62,7 @@ namespace :generate do
     puts FileUtils.cp(Dir.glob("#{origin}/outdatedBrowser.css"), target_dir)
 
     Rake.rake_output_message "Copying html files"
-    target_dir = "app/assets/javascripts/outdatedbrowser"
+    target_dir = "app/views/outdatedbrowser"
     puts FileUtils.cp_r(Dir.glob("#{origin}/lang"), target_dir)
   end
 end
