@@ -59,5 +59,9 @@ namespace :generate do
     target_dir = "app/assets/stylesheets/outdatedbrowser"
     mkdir_p target_dir
     puts FileUtils.cp(Dir.glob("#{origin}/outdatedBrowser.css"), target_dir)
+
+    Rake.rake_output_message "Copying html files"
+    target_dir = "app/assets/javascripts/outdatedbrowser"
+    puts FileUtils.cp_r(Dir.glob("#{origin}/lang"), target_dir)
   end
 end

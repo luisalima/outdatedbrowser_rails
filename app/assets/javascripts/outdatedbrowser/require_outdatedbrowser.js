@@ -11,11 +11,13 @@ function addLoadEvent(func) {
         }
     }
 }
+
 //call plugin function after DOM ready
 addLoadEvent(
     outdatedBrowser({
         bgColor: '#f25648',
         color: '#ffffff',
-        lowerThan: 'transform'
+        lowerThan: 'transform',
+        languagePath: "<%= asset_path('outdatedbrowser/lang/en.html') %>"
     })
 );
