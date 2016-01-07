@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.licenses    = ['MIT']
 
-  s.add_dependency "rails", '4.2.4'
+  s.add_dependency "rails", '>=4.0.0'
   s.add_dependency "i18n", '~> 0.6'
 
   s.add_development_dependency "capybara", '~> 2.4'
