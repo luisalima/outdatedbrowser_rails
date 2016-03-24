@@ -2,7 +2,7 @@
 
 This project bundles the excellent Burocratik's
 [Outdated Browser](https://github.com/burocratik/outdated-browser)
-detector for use with the rails 3.1+ asset pipeline.
+detector for use with the rails 4.0+ asset pipeline.
 
 [![Gem Version](https://badge.fury.io/rb/outdatedbrowser_rails.svg)](http://badge.fury.io/rb/outdatedbrowser_rails)
 
@@ -70,11 +70,12 @@ Here are a couple of things worth noting:
   [this good tutorial](http://viget.com/extend/rails-engine-testing-with-rspec-capybara-and-factorygirl).
 * The reference to `outdatedbrowser` is a git submodule. For a good
   reference on how to update git submodules, see [this](https://chrisjean.com/git-submodules-adding-using-removing-and-updating/).
+* Bundle Install
 * The rake task `rake generate:assets` copies the assets from the
   `vendor/outdated-browser` folder (which is a git submodule) to the
-  engine `app` folder.
-* The rake task `clean` cleans the copied assets.
+  engine `app` folder. This is needed to get the tests to pass!
 * To run tests, use `rspec spec`.
+* The rake task `rake clean` cleans the copied assets. You can run this after you have the tests passing to remove the copied assets.
 
 Finally, to contribute:
 
