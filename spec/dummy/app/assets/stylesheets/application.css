@@ -11,6 +11,6 @@
  * file per style scope.
  *
  *= require_tree .
- *= require outdatedbrowser/outdatedBrowser
+ *= require outdatedbrowser/outdatedbrowser
  *= require_self
  */
