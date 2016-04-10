@@ -2,7 +2,7 @@
 
 This project bundles the excellent Burocratik's
 [Outdated Browser](https://github.com/burocratik/outdated-browser)
-detector for use with the rails 3.1+ asset pipeline.
+detector for use with the rails 4+ asset pipeline.
 
 [![Gem Version](https://badge.fury.io/rb/outdatedbrowser_rails.svg)](http://badge.fury.io/rb/outdatedbrowser_rails)
 
@@ -28,7 +28,7 @@ gem 'outdatedbrowser_rails'
 Add this line to your `application.js`:
 
 ```js
-//= require outdatedbrowser/outdatedBrowser
+//= require outdatedbrowser/outdatedbrowser
 ```
 
 Add this line to your `application.css` || `application.scss`:
