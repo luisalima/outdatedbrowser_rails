@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'static assets integration' do
   it 'provides outdatedBrowser.js on the asset pipeline' do
-    visit '/assets/outdatedbrowser/outdatedbrowser.js'
+    visit '/assets/outdatedbrowser/outdatedBrowser.js'
     expect(page.text).to match(/outdatedBrowser/)
   end
 
@@ -12,7 +12,7 @@ describe 'static assets integration' do
   end
 
   it 'provides outdatedBrowser.css on the asset pipeline' do
-    visit '/assets/outdatedbrowser/outdatedbrowser.css'
+    visit '/assets/outdatedbrowser/outdatedBrowser.css'
     expect(page.text).to match(/Outdated Browser/)
   end
 
