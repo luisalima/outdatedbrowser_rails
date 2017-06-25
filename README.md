@@ -28,7 +28,7 @@ gem 'outdatedbrowser_rails'
 Add this line to your `application.js`:
 
 ```js
-//= require outdatedbrowser/outdatedbrowser
+//= require outdatedbrowser/outdatedBrowser
 ```
 
 Add this line to your `application.css` || `application.scss`:
